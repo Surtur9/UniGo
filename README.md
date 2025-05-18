@@ -98,6 +98,6 @@ Este proyecto está bajo la licencia MIT.
 > Aplicación pensada para estudiantes y visitantes de la UPV/EHU campus Álava, enfocada en la movilidad sostenible y la accesibilidad.
 
 Autores:
-Aritz Blasco
-Asier Cardoso
+Aritz Blasco /
+Asier Cardoso /
 Ainhoa García
