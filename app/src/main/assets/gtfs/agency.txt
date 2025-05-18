@@ -1,0 +1,3 @@
+﻿agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url,agency_email
+1,Álavabus,https://alavabus.eus/es,Europe/Madrid,es,945182060,https://alavabus.eus/es/tarifas-y-otros,alavabus@araba.eus
+2,Transporte Comarcal,https://alavabus.eus/es,Europe/Madrid,es,945182060,https://alavabus.eus/es/tarifas-y-otros,alavabus@araba.eus

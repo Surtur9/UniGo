@@ -1,0 +1,28 @@
+﻿attribution_id,agency_id,route_id,trip_id,organization_name,is_producer,is_operator,is_authority,attribution_url,attribution_email,attribution_phone
+3,1,,,LA_UNION,0,1,0,,admin@autobuseslaunion.com,944765007
+4,1,,,L_REGULARES,0,1,0,,,0
+16,1,,,ARRIAGA,0,1,0,,,945285000
+32,1,,,CUADRA,0,1,0,,info@cuadrabus.com,945120907
+35,2,,,Miranda de Ebro,0,1,0,,somoscuatrodeleci@gmail.com,626542559
+36,1,,,C01 MIRANDA-VITORIA-DURANGO,0,1,0,,admin@autobuseslaunion.com,944765007
+38,2,,,Amurrio-Arespalditza,0,1,0,,fran@aialan.com,663500952
+39,2,,,Amurrio-Urduña,0,1,0,,taximurga@gmail.com,608672849
+40,2,,,Aramaio,0,1,0,,autbengoa@gmail.com,629545923
+41,2,,,Izarra Murgia,0,1,0,,asterlanaraba@hotmail.com,627411127
+42,2,,,Legutio,0,1,0,,tonipine9169@gmail.com,619012075
+43,2,,,Dulantzi/Alegría,0,1,0,,sercolux@sercolux.com,629468800
+44,2,,,Agurain-Salvatierra,0,1,0,,sercolux@sercolux.com,629468800
+45,2,,,Araia,0,1,0,,sercolux@sercolux.com,629468800
+46,2,,,Kuartango,0,1,0,,taxiruralkuartango@gmail.com,663520612
+47,2,,,Espejo-Villanueva de Valdegobía,0,1,0,,taxiruralgaubea@gmail.com,608879573
+48,2,,,Pobes,0,1,0,,taxiruralgaubea@gmail.com,608879573
+49,2,,,Iruña Oka,0,1,0,,taxijalaser@gmail.com,619412345
+50,2,,,La Puebla de Arganzón,0,1,0,,taxiruralgaubea@gmail.com,608879573
+51,2,,,Treviño Este,0,1,0,,yolanda@aldeasdetrevino.com,653741255
+52,2,,,Treviño Oeste,0,1,0,,taxitrevino@gmail.com,600464874
+53,2,,,Maeztu/Maestu,0,1,0,,alfredoharana@gmail.com,686391355
+54,2,,,Kanpezu,0,1,0,,juancarlosperezdeonraita@yahoo.es,659641183
+55,2,,,Urizaharra/Peñacerrada,0,1,0,,anderurizaharra@hotmail.com,652434157
+56,2,,,Bernedo,0,1,0,,olgaalonsopinedo@gmail.com,649838993
+57,2,,,Guardia/Laguardia,0,1,0,,santosazkoaga@gmail.com,609352852
+58,1,,,C03 BILBAO-PAMPLONA,0,1,0,,idoia@cuadrabus.com,670477727

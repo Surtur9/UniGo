@@ -1,0 +1,32 @@
+<resources>
+    <style name="Theme.UniGo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- FONDO AUTOMÁTICO -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <!-- TEXTO PRINCIPAL -->
+        <item name="android:textColorPrimary">@color/colorOnBackground</item>
+        <!-- PALETA -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <item name="colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+    </style>
+    <style name="Theme.UNIGO.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <style name="MarkerText">
+        <!-- Color y tamaño de la letra -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <!-- Padding interno -->
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <!-- Fondo: shape redondeado blanco -->
+        <item name="android:background">@drawable/bg_marker_text</item>
+    </style>
+
+</resources>

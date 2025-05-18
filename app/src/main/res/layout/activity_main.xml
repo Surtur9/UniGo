@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/top_app_bar_menu"
+        app:titleTextColor="?attr/colorOnPrimary"/>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_unigo_logo"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                 Tu Viaje Al \n  CAMPUS DE ÁLABA UPV/EHU"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColor="?attr/colorOnBackground"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- Botón principal (“Ir a la Uni”) centrado en pantalla -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMain"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:fabCustomSize="96dp"
+        app:useCompatPadding="false"
+        app:contentPadding="0dp"
+        app:srcCompat="@drawable/ic_university"
+        app:tint="?attr/colorOnPrimary"
+        app:backgroundTint="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botones secundarios ocultos al inicio (idénticos al fabMain para animar) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabWalk"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:fabCustomSize="72dp"
+        app:useCompatPadding="false"
+        app:contentPadding="0dp"
+        android:visibility="gone"
+        app:backgroundTint="?attr/colorSecondary"
+        app:srcCompat="@drawable/ic_walk"
+        app:tint="?attr/colorOnSecondary"
+        app:layout_constraintTop_toTopOf="@id/fabMain"
+        app:layout_constraintBottom_toBottomOf="@id/fabMain"
+        app:layout_constraintStart_toStartOf="@id/fabMain"
+        app:layout_constraintEnd_toEndOf="@id/fabMain"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBike"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:fabCustomSize="72dp"
+        app:useCompatPadding="false"
+        app:contentPadding="0dp"
+        android:visibility="gone"
+        app:backgroundTint="?attr/colorSecondary"
+        app:srcCompat="@drawable/ic_bike"
+        app:tint="?attr/colorOnSecondary"
+        app:layout_constraintTop_toTopOf="@id/fabMain"
+        app:layout_constraintBottom_toBottomOf="@id/fabMain"
+        app:layout_constraintStart_toStartOf="@id/fabMain"
+        app:layout_constraintEnd_toEndOf="@id/fabMain"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBus"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:fabCustomSize="72dp"
+        app:useCompatPadding="false"
+        app:contentPadding="0dp"
+        android:visibility="gone"
+        app:backgroundTint="?attr/colorSecondary"
+        app:srcCompat="@drawable/ic_bus"
+        app:tint="?attr/colorOnSecondary"
+        app:layout_constraintTop_toTopOf="@id/fabMain"
+        app:layout_constraintBottom_toBottomOf="@id/fabMain"
+        app:layout_constraintStart_toStartOf="@id/fabMain"
+        app:layout_constraintEnd_toEndOf="@id/fabMain"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTram"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:fabCustomSize="72dp"
+        app:useCompatPadding="false"
+        app:contentPadding="0dp"
+        android:visibility="gone"
+        app:backgroundTint="?attr/colorSecondary"
+        app:srcCompat="@drawable/ic_tram"
+        app:tint="?attr/colorOnSecondary"
+        app:layout_constraintTop_toTopOf="@id/fabMain"
+        app:layout_constraintBottom_toBottomOf="@id/fabMain"
+        app:layout_constraintStart_toStartOf="@id/fabMain"
+        app:layout_constraintEnd_toEndOf="@id/fabMain"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAirQuality"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        style="@style/Widget.MaterialComponents.Button"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_air"
+        app:iconTint="@android:color/white"
+        app:iconGravity="textTop"
+        app:iconSize="40dp"
+        app:iconPadding="6dp"
+
+        android:text="Calidad del aire"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTraffic"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnAirQuality"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        style="@style/Widget.MaterialComponents.Button"
+        android:backgroundTint="#C62828"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_traffic"
+        app:iconTint="@android:color/white"
+        app:iconGravity="textTop"
+        app:iconSize="40dp"
+        app:iconPadding="6dp"
+
+        android:text="Tráfico"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWeather"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnAirQuality"
+        app:layout_constraintStart_toStartOf="parent"
+
+        style="@style/Widget.MaterialComponents.Button"
+        android:backgroundTint="#F9A825"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_sunny"
+        app:iconTint="@android:color/white"
+        app:iconGravity="textTop"
+        app:iconSize="40dp"
+        app:iconPadding="6dp"
+
+        android:text="Tiempo"
+        android:textSize="14sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

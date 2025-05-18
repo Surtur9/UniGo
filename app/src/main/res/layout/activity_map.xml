@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mapContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Mapa de fondo -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Botón de volver -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="top|start"
+        android:background="@drawable/bg_circle_white"
+        android:paddingStart="18dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:src="@drawable/ic_arrow_back"
+        android:scaleType="centerInside"
+        android:contentDescription="Volver"
+        app:tint="@android:color/black" />
+
+
+    <!-- Grupo de instrucciones (oculto hasta cargar pasos) -->
+    <LinearLayout
+        android:id="@+id/llInstructionGroup"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_gravity="top"
+        android:paddingHorizontal="16dp"
+        android:visibility="gone">
+
+        <!-- Caja redondeada de instrucción -->
+        <LinearLayout
+            android:id="@+id/llStepNavigator"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_rect"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btnPrev"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Paso anterior"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvInstruction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="Aquí irá la instrucción completa del paso"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_forward"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Siguiente paso"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStepIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_rounded_rect"
+            android:padding="6dp"
+            android:visibility="gone"
+            android:text="Paso 1 de 5"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Indicador de modo (sólo icono, no hace nada) -->
+    <ImageButton
+        android:id="@+id/btnModeIndicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="162dp"
+        android:background="@drawable/bg_circle_white"
+        android:padding="12dp"
+        android:src="@drawable/ic_walk"
+        android:contentDescription="Modo de viaje"
+        android:visibility="gone"
+        app:tint="@android:color/black" />
+
+    <!-- Botón de alternar TalkBack -->
+    <ImageButton
+        android:id="@+id/btnTalkToggle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_circle_white"
+        android:padding="12dp"
+        android:src="@drawable/ic_talk_off"
+        android:contentDescription="Alternar TalkBack"
+        android:visibility="gone"
+        app:tint="@android:color/black" />
+
+    <!-- Botón de Ver carriles bici -->
+    <ImageButton
+        android:id="@+id/btnMap"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_circle_white"
+        android:padding="12dp"
+        android:src="@drawable/ic_map"
+        android:contentDescription="Ver carriles bici"
+        android:visibility="gone"
+        app:tint="@android:color/black" />
+
+    <!-- Boton “Info de viaje” -->
+    <ImageButton
+        android:id="@+id/btnInfo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="292dp"
+        android:background="@drawable/bg_circle_white"
+        android:padding="12dp"
+        android:src="@drawable/ic_info"
+        android:contentDescription="Información de viaje"
+        android:visibility="gone"
+        app:tint="@android:color/black" />
+
+    <!-- Caja pequeña redondeada de distancia, duración y H. Llegada -->
+    <TextView
+        android:id="@+id/tvRouteInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_small_rounded_rect"
+        android:padding="8dp"
+        android:text="Distancia: X   Duración: Y   H. Llegada: Z"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</FrameLayout>

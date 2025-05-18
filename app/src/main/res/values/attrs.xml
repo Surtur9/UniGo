@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Declaramos los atributos para usarlos via ?attr/... -->
+    <attr name="colorBackground" format="color"/>
+    <attr name="colorOnBackground" format="color"/>
+</resources>

@@ -1,0 +1,2 @@
+﻿feed_publisher_name,feed_publisher_url,feed_lang,default_lang,feed_start_date,feed_end_date,feed_version,feed_contact_email,feed_contact_url
+Diputación Foral de Álava,https://alavabus.eus,es,en,20250517,20250716,20250517032103,,

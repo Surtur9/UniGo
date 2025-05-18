@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingsScroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/settingsContainer"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSettingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuración"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnBackground"/>
+
+        <!-- Switch Tema -->
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo Oscuro"
+            android:layout_marginTop="24dp"
+            android:textColor="?attr/colorOnBackground"/>
+
+        <!-- Switch TalkBack -->
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchTalkback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activar TalkBack"
+            android:layout_marginTop="16dp"
+            android:textColor="?attr/colorOnBackground"/>
+
+        <!-- Selección de idioma TalkBack -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idioma TalkBack"
+            android:layout_marginTop="24dp"
+            android:textColor="?attr/colorOnBackground"/>
+
+        <RadioGroup
+            android:id="@+id/rgLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbLangEs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Español"
+                android:textColor="?attr/colorOnBackground"/>
+
+            <RadioButton
+                android:id="@+id/rbLangEu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Euskera"
+                android:textColor="?attr/colorOnBackground"/>
+
+            <RadioButton
+                android:id="@+id/rbLangEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Inglés"
+                android:textColor="?attr/colorOnBackground"/>
+        </RadioGroup>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

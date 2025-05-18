@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nombre de la app -->
+    <string name="app_name">UniGo</string>
+
+    <!-- Botón principal -->
+    <string name="action_go_to_uni">Ir a la Uni</string>
+    <string name="cd_go_to_uni">Ir a la Universidad</string>
+
+    <!-- Modos de transporte -->
+    <string name="transport_walk">A pie</string>
+    <string name="cd_walk">Caminar a la Universidad</string>
+
+    <string name="transport_bike">En bicicleta</string>
+    <string name="cd_bike">Ir en bicicleta a la Universidad</string>
+
+    <string name="transport_bus">En autobús urbano</string>
+    <string name="cd_bus">Ir en autobús a la Universidad</string>
+
+    <string name="transport_tram">En tranvía</string>
+    <string name="cd_tram">Ir en tranvía a la Universidad</string>
+</resources>
