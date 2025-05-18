@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         // 4.4) Inicializar Places si aún no está
         if (!Places.isInitialized()) {
             Places.initialize(getApplicationContext(),
-                    "AIzaSyCJhoIc-L20v8oVCYomt3mvd3UxoG7whM0");
+                    "??");
         }
 
         // 5) Layout y Toolbar
